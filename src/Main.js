@@ -1,8 +1,10 @@
-import React, {useEffect, useState } from 'react';
-import { Link, useNavigate } from "react-router-dom";
-import { useAuthState } from "react-firebase-hooks/auth";
+import React from 'react';
 import './Main.css';
 
-export default function Main() {
-    
+export function Main() {
+    return(
+        <div>
+           <h3 className='sentence'>Hello! this is my notes</h3>
+        </div>
+          );
 }

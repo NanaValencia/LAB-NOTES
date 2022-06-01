@@ -1,15 +1,22 @@
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { initializeApp } from "firebase/app";
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-export const firebaseConfig = {
-  apiKey: 'AIzaSyDhjVPgymevoHI5P7Ei_zaCiAs0kUf-PMc',
-  authDomain: 'ecotraveler-7a1f9.firebaseapp.com',
-  projectId: 'ecotraveler-7a1f9',
-  storageBucket: 'ecotraveler-7a1f9.appspot.com',
-  messagingSenderId: '538325992373',
-  appId: '1:538325992373:web:71fb73cb17db171c8d0ffc',
-  measurementId: 'G-BRN1X1QDKR',
-};
+
+
+  // Import the functions you need from the SDKs you need
+ 
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyA0EkMi7UY4uCYspHlIsfQVIZcdMDIdzzo",
+    authDomain: "fun-notes.firebaseapp.com",
+    projectId: "fun-notes",
+    storageBucket: "fun-notes.appspot.com",
+    messagingSenderId: "727256306942",
+    appId: "1:727256306942:web:66de3ec69941fa27aac1af"
+  };
+
+  // Initialize Firebase
+  export const app = initializeApp(firebaseConfig);
 
