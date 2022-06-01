@@ -1,6 +1,6 @@
 import React from "react";
 import LoginView from './LoginView.js';
-import Main from './Main';
+import { Main } from './Main.js';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <BrowserRouter> 
       <Routes>
         <Route path='/' element={ <LoginView /> }/>
-        <Route path='/' element={ <Main /> }/>
+        <Route path='/Main' element={ <Main /> }/>
       </Routes>
     </BrowserRouter> 
   );
