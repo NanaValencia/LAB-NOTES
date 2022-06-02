@@ -8,7 +8,7 @@ import { initializeApp } from "firebase/app";
   // https://firebase.google.com/docs/web/setup#available-libraries
 
   // Your web app's Firebase configuration
-  const firebaseConfig = {
+  export const firebaseConfig = {
     apiKey: "AIzaSyA0EkMi7UY4uCYspHlIsfQVIZcdMDIdzzo",
     authDomain: "fun-notes.firebaseapp.com",
     projectId: "fun-notes",

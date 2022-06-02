@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
-import { loginWithGoogle, auth } from './firebase/firebase.js';
+import { loginWithGoogle, auth} from './firebase/firebase.js';
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import './LoginView.css';
 
