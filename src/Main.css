@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap');
 
-*{
-  margin: 0;
-  padding: 0;
+.notes {
+  display:flexbox;
 }
 
 .sentence {
@@ -11,4 +10,11 @@
     padding-top: 10%;
     display: grid;
     justify-items: center;
+}
+.BtnLogout {
+    background-image: url('./img/highliter.svg');
+    font-family: 'Crafty Girls', cursive;
+    font-size: larger;
+    border: none;
+    margin-left: 85%;
 }
