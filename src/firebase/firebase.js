@@ -1,5 +1,5 @@
 import { firebaseConfig } from "./firebaseConfig.js";
-import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, signOut } from "firebase/auth";
 
 const provider = new GoogleAuthProvider();
 export const auth = getAuth();
@@ -17,8 +17,6 @@ signInWithPopup(auth, provider)
     const credential = GoogleAuthProvider.credentialFromError(error);
   });
 }
-
-const auth = getAuth();
-signOut(auth).then(() => {
-}).catch((error) => {
-});
+ export const logout = () => {
+    return signOut(auth)
+ }

@@ -5,7 +5,7 @@ import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import './LoginView.css';
 
 
-function LoginView() {
+ export function LoginView() {
     const navigate = useNavigate();
           const loginWithGoogle = () => {
               const provider = new GoogleAuthProvider();
@@ -25,5 +25,13 @@ function LoginView() {
               );
   }
 
-  export default LoginView;
+    function Notes () {
+        <div>
+            <textarea>Title</textarea>
+            <textarea>
+                
+            </textarea>
+
+        </div>
+    }
 

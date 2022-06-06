@@ -1,5 +1,5 @@
 import React from "react";
-import LoginView from './LoginView.js';
+import { LoginView } from './LoginView.js';
 import { Main } from './Main.js';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
