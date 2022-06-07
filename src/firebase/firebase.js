@@ -1,5 +1,20 @@
-import { firebaseConfig } from "./firebaseConfig.js";
+import db  from "./firebaseConfig.js";
 import { getAuth, signInWithPopup, GoogleAuthProvider, signOut } from "firebase/auth";
+import {
+getFirestore,
+  collection,
+  addDoc,
+  query,
+  getDocs,
+  serverTimestamp,
+  orderBy,
+  onSnapshot,
+  updateDoc,
+  doc,
+  deleteDoc,
+  arrayUnion,
+  arrayRemove,
+} from 'firebase/firestore';
 
 const provider = new GoogleAuthProvider();
 export const auth = getAuth();
@@ -20,3 +35,7 @@ signInWithPopup(auth, provider)
  export const logout = () => {
     return signOut(auth)
  }
+
+ export const saveNotes = (title, note) => addDoc(collection(db, 'Notes'), {
+  title, note
+});
