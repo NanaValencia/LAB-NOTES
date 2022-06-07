@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap');
-
+@media (min-width: 600px) {
 .notes {
+  margin: 0;
+  padding: 0;
+  background-image: url('./img/fondo.png');
   display:flexbox;
 }
 
 .sentence {
     font-size: xx-large;
     font-family: 'Crafty Girls', cursive;
-    padding-top: 10%;
     display: grid;
     justify-items: center;
 }
@@ -17,4 +19,10 @@
     font-size: larger;
     border: none;
     margin-left: 85%;
+    margin-top: 2%;
+}
+
+
+
+
 }

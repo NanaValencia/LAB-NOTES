@@ -25,13 +25,6 @@ import './LoginView.css';
               );
   }
 
-    function Notes () {
-        <div>
-            <textarea>Title</textarea>
-            <textarea>
-                
-            </textarea>
+ 
 
-        </div>
-    }
 
