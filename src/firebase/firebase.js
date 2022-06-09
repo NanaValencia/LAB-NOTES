@@ -36,6 +36,24 @@ signInWithPopup(auth, provider)
     return signOut(auth)
  }
 
- export const saveNotes = (title, note) => addDoc(collection(db, 'Notes'), {
+ export const saveNotes = async (title, note) => { 
+   addDoc(collection(db, 'Notes'), {
   title, note
 });
+
+const noteList = await showsNote();
+console.log(noteList);
+noteList.forEach((e) => {
+  console.log(e.data());
+})
+
+ }
+export const showsNote = async () => {
+  const querySnapshot = await getDocs(collection(db, 'Notes'));
+  return querySnapshot;
+};
+
+export const onSnapshotFunction = () => {
+  const paint = query(collection(db, 'Notes'));
+  return paint;
+};

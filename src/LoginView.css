@@ -1,18 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap');
 
 .loginView {
+  width: 744 px;
+  height: 1133px; 
   margin: 0;
   padding: 0;
   background-image: url('./img/fondo.png');
   font-family: 'Crafty Girls', cursive;
-  padding-top: 40%;
 }
 
-.title {
+.name {
   background-image: none;
   display: grid;
   justify-content: center;
   font-size: 500%;
+  margin: 1%;
+  padding-top: 40%;
 }
 
 .description {
@@ -20,8 +23,9 @@
   display: grid;
   justify-content: center;
   font-size: 200%;
-  margin-left: 7%;
+  margin-left: 9%;
   margin-right: 5%;
+  margin-top: 0%;
 }
 
 .BtnLogin {

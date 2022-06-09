@@ -12,6 +12,7 @@
     font-family: 'Crafty Girls', cursive;
     display: grid;
     justify-items: center;
+    margin: auto;
 }
 .BtnLogout {
     background-image: url('./img/highliter.svg');
@@ -19,7 +20,7 @@
     font-size: larger;
     border: none;
     margin-left: 85%;
-    margin-top: 2%;
+    margin-top: 10%;
 }
 
 

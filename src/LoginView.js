@@ -17,7 +17,7 @@ import './LoginView.css';
           };
           return(
             <div className='loginView'>
-               <h1 className='title'>Fun-Notes</h1>
+               <h1 className='name'>Fun-Notes</h1>
                <h3 className='description'>Notes app to have all your pending in order and not lose anything</h3>
                <button className='BtnLogin' onClick={loginWithGoogle}>
                 Login with Google</button>
