@@ -7,12 +7,16 @@
 }
 
 .title {
-    background-image: none;
+    background-image: url('./img/highliter.svg');
+    border: none;
     display: grid;
     justify-content: center;
     font-size: small;
 }
 
+.note {
+    
+}
 
 
 }
