@@ -1,42 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap');
-@media (min-width: 600px) {
 
-.notes {
-   width: 744 px;
-   height: 1133px; 
-  
-}
-
-.notesContainer {
+.showNotes {
     display: grid;
     justify-items: center;
 }
 
-.title {
+.showTitle {
     font-family: 'Crafty Girls', cursive;
     background-image: url('./img/highliter.svg');
-    border: none;
     width: 500px;
     height:  25px;
+    border: none;
     display: grid;
     justify-content: center;
-    font-size: small;
+    margin-top: 2%;
 }
 
-.note {
+.showNote {
     font-family: 'Crafty Girls', cursive;
     background-image: url('./img/postit.svg');
     border: none;
+    display: grid;
+    justify-content: center;
     width: 576px;
     height: 208px;
-}
-.btnSave {
-    background-image: url('./img/Group\ 26.svg');
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: aliceblue;
-    margin-left: 95%;
-}
-
 }

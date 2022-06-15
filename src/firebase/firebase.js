@@ -37,23 +37,21 @@ signInWithPopup(auth, provider)
  }
 
  export const saveNotes = async (title, note) => { 
-   addDoc(collection(db, 'Notes'), {
-  title, note
-});
+   const newNote = await addDoc(collection(db, 'Notes'), {
+     title, note
+   });
+   console.log(newNote.id);
+   return newNote;
+};
 
-const noteList = await showsNote();
-console.log(noteList);
-noteList.forEach((e) => {
-  console.log(e.data());
-})
-
- }
-export const showsNote = async () => {
+export const noteList = async() => {
+  const notes = []
   const querySnapshot = await getDocs(collection(db, 'Notes'));
-  return querySnapshot;
-};
+  querySnapshot.forEach(doc => {
+    notes.push(doc.data())
+  })
+  return notes;
+}
 
-export const onSnapshotFunction = () => {
-  const paint = query(collection(db, 'Notes'));
-  return paint;
-};
+
+
